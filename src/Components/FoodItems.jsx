@@ -26,7 +26,7 @@ function FoodItems() {
                     var s2 = search.toLowerCase();
                     if(s1.includes(s2))
                     {
-                        return (<FoodDisplayCard key={dt.fid} fname={dt.name} url={dt.imageURL}/>);
+                        return (<FoodDisplayCard key={dt.fid} fid={dt.fid} fname={dt.name} url={dt.imageURL}/>);
                     }
                 })}
                 </div>
@@ -45,7 +45,7 @@ function FoodItems() {
             <div className="row">
                 {Data.map((dt)=>{
                 return (
-                    <FoodDisplayCard key={dt.fid} fname={dt.name} url={dt.imageURL}/>);
+                    <FoodDisplayCard key={dt.fid} fid={dt.fid} fname={dt.name} url={dt.imageURL}/>);
                 })}
             </div>
             </div>

@@ -7,7 +7,9 @@ function FoodDisplayCard(prop) {
             <img src={prop.url} className="card-img-top" alt="..."></img>
             <div className="card-body">
             <h5 className="card-title">{prop.fname}</h5>
-            <button className="btn btn-primary">More Info</button>
+            <button className="btn btn-primary" value={prop.fid} onClick={()=>{
+                console.log(prop.fid)
+            }}>More Info</button>
             </div>
             </div>
         </div>
