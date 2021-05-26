@@ -17,7 +17,7 @@ function FoodItems() {
         <Headlogo/>
         <div className="form-outline">
         
-            <input type="search" className="form-control" value={search} onChange={SearchItem} placeholder="Search Food" autoFocus="true" aria-label="Search" />
+            <input type="search" className="form-control" value={search} onChange={SearchItem} placeholder=" 🔍 Search Food" autoFocus={true} aria-label="Search" />
         </div>
                 
                 <div className="row">
