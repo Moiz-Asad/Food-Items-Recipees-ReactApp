@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 .card{
     width: 18rem;
     margin: 2rem auto;
@@ -5,4 +6,26 @@
 }
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-outline{
+    width: 40rem;
+    margin: auto;
+}
+.btn{
+    border: 2px solid grey;
+}
+.btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(85, 83, 83, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.headlg{
+    background-color: #005792;
+    height: 7rem;
+    margin-bottom: 1.5rem;
+}
+.logo{
+    color: white;
+    margin: auto;
+    padding-top: 2rem;
+    width: 30rem;
+    font-family: 'Pattaya', sans-serif;
 }
