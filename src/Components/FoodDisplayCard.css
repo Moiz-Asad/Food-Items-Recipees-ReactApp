@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.container-fluid{
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+}
 .card{
     width: 18rem;
     margin: 2rem auto;
@@ -8,11 +13,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .form-outline{
-    width: 40rem;
-    margin: auto;
+    width: auto;
+    margin: auto 3rem;
 }
 .btn{
-    border: 2px solid grey;
+    border: 2px solid lightgray;
 }
 .btn:hover{
     box-shadow: 0 4px 8px 0 rgba(85, 83, 83, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -26,7 +31,8 @@
     color: white;
     margin: auto;
     padding-top: 2rem;
-    width: 30rem;
+    width: auto;
+    text-align: center;
     font-family: 'Pattaya', sans-serif;
 }
 .movement{
@@ -144,4 +150,20 @@
     color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
+}
+.searchcontainer{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+}
+.searchcontainer>button{
+    height: inherit;
+    width: 4rem;
+}
+.backcontainer{
+    height: 6rem;
+}
+.line{
+    height: 0.2rem;
+    background-color: #005792;
 }

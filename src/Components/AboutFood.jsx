@@ -7,38 +7,34 @@ function AboutFood(prop) {
     D.timers.map((e)=>{
         n=n+e;
     })
-    
     return (
-        <><div class="row">
-        <div class="col-md-4">
-            <div class="profile-img">
-                <img src={D.imageURL} alt="Food Recipee"/> 
+        <><div className="container-fluid row">
+        <div className="col-md-4">
+            <div className="profile-img">
+                <img className="mb-5" src={D.imageURL} alt="Food Recipee"/> 
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="profile-head">
-                        <h5>
+        <div className="col-md-6">
+            <div className="profile-head">
+                        <h2>
                             {D.name}
-                        </h5>
+                        </h2>
                         <h6>
                             Total Ingredients : {D.ingredients.length}
                         </h6>
-                        <p class="proile-rating">Time to Cook : <span>{n} minutes</span></p>
+                        <p className="proile-rating">Time to Cook : <span>{n} minutes</span></p>
             </div>
 
         </div>
-        <div class="col-md-2">
-            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-        </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 mt-5">
-            <h1 className="hotbar">INGREDIENTS</h1>
+    <div className="container-fluid row">
+        <div className="col-md-12 mt-5">
+            <h1 className="hotbar logo">Ingredients</h1>
         </div>
-        <div class="col-md-12 mb-5">
-            <div class="tab-content profile-tab" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">                      
-                <table class="table table-sm table-dark">
+        <div className="col-md-12 mb-5">
+            <div className="tab-content profile-tab" id="myTabContent">
+                <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">                      
+                <table className="table table-sm table-dark">
                     <thead>
                         <tr>
                         <th scope="col">No.</th>
@@ -61,12 +57,12 @@ function AboutFood(prop) {
                     </table>
                 
                 </div>
-                <div class="col-md-12 mt-5">
-                <h1 className="hotbar">STEPS TO COOK</h1>
+                <div className="col-md-12 mt-5">
+                <h1 className="hotbar logo">Steps used to Cook</h1>
                 </div>
 
-                <div class="col-md-8">
-                <div class="profile-work">
+                <div className="col-md-8">
+                <div className="profile-work">
                 <ol>
                 {D.steps.map((e)=>{
                     return (<li><b>{e}</b></li>);

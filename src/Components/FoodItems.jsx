@@ -16,14 +16,14 @@ function FoodItems() {
     }
     if(state === "searchstate")
     {
-        return (<div className="container-fluid" className="filled">
+        return (<div className="container-fluid">
         <Headlogo/>
         <div className="form-outline">
         
-            <input type="search" className="form-control" value={search} onChange={SearchItem} placeholder=" 🔍 Search Food" autoFocus={true} aria-label="Search" />
+            <input  type="search" className="form-control" value={search} onChange={SearchItem} placeholder=" 🔍 Search Food" autoFocus={true} aria-label="Search" />
         </div>
                 
-                <div className="row">
+                <div className="container-fluid row">
                 {Data.map((dt)=>{
                     var s1 = dt.name.toLowerCase();
                     var s2 = search.toLowerCase();
@@ -41,7 +41,12 @@ function FoodItems() {
                     }
                 })}
                 </div>
+                <footer className="page-footer font-small unique-color-dark pt-4">
+                <div className=" bg-dark text-white footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="www.github.com/Moiz-Asad"> Moiz Asad </a>
+                </div>
 
+                </footer>
         </div>
         )
     }
@@ -50,11 +55,11 @@ function FoodItems() {
     {
         return (
             
-            <div className="container-fluid" className="filled">
+            <div className="container-fluid">
             <Headlogo/>
-            <button className="btn btn-light" onClick={SearchBarDisplay}>🔍</button>
-            
-            <div className="row">
+            <div className="container-fluid searchcontainer"><button className="btn btn-light" onClick={SearchBarDisplay}>🔍</button>
+            </div>
+            <div className="container-fluid row">
                 {Data.map((dt)=>{
                 return (
                     <div className="movement" className="col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -67,22 +72,35 @@ function FoodItems() {
                     </div>);
                 })}
             </div>
+            <footer className="page-footer font-small unique-color-dark pt-4">
+                <div className=" bg-dark text-white footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="www.github.com/Moiz-Asad"> Moiz Asad </a>
+                </div>
+
+                </footer>
             </div>
         )    
 
     }
     else
     {
-        return (<div className="container-fluid" className="filled">
+        var symbol = '<';
+        return (<div className="container-fluid">
         <Headlogo/>
-        <div className="container-fluid">
-            <button onClick={()=>{
+        <div className="container-fluid backcontainer">
+            <button className="btn mx-5" onClick={()=>{
                 setstate("mainstate");
-            }}>Back</button>
+            }}>  {symbol}  Back</button>
         </div>
         <div className="container-fluid">
             <AboutFood id={state}/>
         </div>
+        <footer className="page-footer font-small unique-color-dark pt-4">
+                <div className=" bg-dark text-white footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="www.github.com/Moiz-Asad"> Moiz Asad </a>
+                </div>
+
+                </footer>
         </div>
         )
     }
